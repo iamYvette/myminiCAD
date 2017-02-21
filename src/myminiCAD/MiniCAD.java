@@ -36,9 +36,9 @@ public class MiniCAD extends JFrame{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public Color color = Color.BLACK;
+	private Color color = Color.BLACK;
 	private String command="Circle";
-	public ArrayList <Shape>list = new ArrayList<Shape>();
+	private ArrayList <Shape>list = new ArrayList<Shape>();
 	private JPanel panelsubcenter;
 	private ObjectOutputStream output;
 	private ObjectInputStream input;

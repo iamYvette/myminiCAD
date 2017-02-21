@@ -14,26 +14,14 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class DrawListener implements MouseListener, MouseMotionListener {
-	public Graphics2D g;
-	public int x1,x2,x3,y1,y2,y3;
-	public String str;
-	public ButtonGroup bg;
-	public Color color;
-	public MiniCAD cad;
-	public boolean flag = true;
+	private Graphics2D g;
+	private int x1,x2,y1,y2;
+	private String str;
+	private MiniCAD cad;
 	private JPanel pl;
-	
-	public Random  rad = new Random();
-	public DrawListener(Graphics g){
-		this.g = (Graphics2D)g;
-	}
-	public DrawListener(Graphics g, ButtonGroup bg){
-		this.g = (Graphics2D)g;
-		this.bg = bg;
-	}
+
 	public DrawListener(Graphics g, MiniCAD cad,JPanel pl){
 		this.g = (Graphics2D)g;
-//		this.bg = bg;
 		this.cad = cad;
 		this.pl=pl;
 	}
