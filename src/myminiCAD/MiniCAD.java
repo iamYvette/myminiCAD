@@ -73,18 +73,6 @@ public class MiniCAD extends JFrame{
 			}
 		});
 		file.add(sfile);
-		JMenu help = new JMenu("Help");
-		bar.add(help);
-		JMenuItem helpme = new JMenuItem("Help Guide");
-		helpme.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				getHelp();
-			}
-		});
-		help.add(helpme);
 		
 		JPanel panelcenter = new JPanel();
 		panelcenter.setLayout(new FlowLayout(FlowLayout.LEFT,10,10));
